@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicDow - Free Stock Images</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+
+<script type='text/javascript' src='//pl26050793.effectiveratecpm.com/e7/15/33/e7153360d2eaa7fb39467f6f3ac24231.js'></script>
+
+
+
+</head>
+<body>
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner">
+        <div class="spinner"></div>
+        <p>Loading...</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/" class="logo">
+                <i class="fas fa-camera-retro"></i>
+                <span class="logo-text">PicDow</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <p>Search millions of high-quality, royalty-free stock photos</p>
+            <div class="search-container">
+                <div class="search-bar">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search for images...">
+                    <button id="searchButton">
+                        Search
+                    </button>
+                </div>
+                <div class="popular-searches">
+                    <span>Popular:</span>
+                    <button class="tag-btn" data-tag="nature">🌿 Nature</button>
+                    <button class="tag-btn" data-tag="travel">✈️ Travel</button>
+                    <button class="tag-btn" data-tag="animals">🐾 Animals</button>
+                    <button class="tag-btn" data-tag="food">🍕 Food</button>
+                    <button class="tag-btn" data-tag="technology">💻 Tech</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Results Section -->
+    <div class="results-section">
+        <div class="container">
+            <div class="results-header">
+                <h2 id="resultsTitle">Trending Images</h2>
+            </div>
+            <div id="results" class="image-grid"></div>
+        </div>
+    </div>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-actions">
+                    <button class="modal-btn download" onclick="downloadImage(currentImage)">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </button>
+                </div>
+                <div class="modal-stats">
+                    <div class="modal-stat">
+                        <i class="far fa-eye"></i>
+                        <span id="modalViews">0</span> Views
+                    </div>
+                    <div class="modal-stat">
+                        <i class="far fa-heart"></i>
+                        <span id="modalLikes">0</span> Likes
+                    </div>
+                    <div class="modal-stat">
+                        <i class="fas fa-download"></i>
+                        <span id="modalDownloads">0</span> Downloads
+                    </div>
+                    <button class="modal-close" onclick="closeImageModal()">×</button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <img id="modalImage" src="" alt="">
+            </div>
+            <div class="related-images">
+                <h4 class="related-title">Similar Images</h4>
+                <div id="relatedGrid" class="related-grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+<script type='text/javascript' src='//pl26050793.effectiveratecpm.com/e7/15/33/e7153360d2eaa7fb39467f6f3ac24231.js'></script>
+
+
+</body>
+</html>
